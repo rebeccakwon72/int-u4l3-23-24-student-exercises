@@ -16,16 +16,20 @@ let scienceButton = document.querySelector(".science-button");
 
 englishButton.addEventListener("click", function() {
     let englishInput = document.querySelector(".english").value;
+    let displayAnswer = document.querySelector(".english-message");
 
+    if (englishInput === "Mon" || "mon") {
+        displayAnswer.innerHTML = "Correct!";
+    } else {
+        displayAnswer.innerHTML = "Wrong! Try again.";
+    }
+    console.log(englishInput);
     // 2. Write an if-else conditional statement.
     //  - Check if the value of the variable englishInput is correct.
     //  - The answer should be "Mon".
     //  - If the user enters the correct answer, use .innerHTML to display the word "Correct!" in the ".english-message" div. 
     //  - If incorrect, display "Wrong! Try again."
     
-
-
-
 });
 
 
